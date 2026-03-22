@@ -12,24 +12,24 @@ st.markdown("""
 
 *, *::before, *::after { box-sizing: border-box; }
 html, body, [data-testid="stAppViewContainer"] {
-    background: #F0F4F8 !important;
+    background: #0F1117 !important;
     font-family: 'Sarabun', sans-serif;
-    color: #2D3748;
+    color: #2D3250;
 }
 [data-testid="stSidebar"] {
-    background: #FFFFFF !important;
-    border-right: 1px solid #E2E8F0 !important;
+    background: #1A1D2E !important;
+    border-right: 1px solid #2D3250 !important;
 }
 [data-testid="stSidebar"] * {
     font-family: 'Sarabun', sans-serif !important;
-    color: #2D3748 !important;
+    color: #2D3250 !important;
 }
 section.main > div { padding: 2rem 2.5rem; }
 [data-testid="stDecoration"], header { display: none !important; }
 
 .page-header {
     padding: 1.5rem 0 2rem;
-    border-bottom: 1px solid #E2E8F0;
+    border-bottom: 1px solid #2D3250;
     margin-bottom: 2rem;
 }
 .page-eyebrow {
@@ -39,64 +39,64 @@ section.main > div { padding: 2rem 2.5rem; }
 }
 .page-title {
     font-family: 'Prompt', sans-serif;
-    font-size: 2rem; font-weight: 700; color: #1A202C;
+    font-size: 2rem; font-weight: 700; color: #F0F4FF;
 }
 .page-sub {
     font-family: 'Sarabun', sans-serif;
-    font-size: .95rem; color: #4A5568; margin-top: .4rem; line-height: 1.6;
+    font-size: .95rem; color: #94A3B8; margin-top: .4rem; line-height: 1.6;
 }
 
 /* Instruction panel */
 .instruction-panel {
-    background: #FFFFFF; border: 1px solid #E2E8F0;
-    border-top: 3px solid #E85D04;
+    background: #1A1D2E; border: 1px solid #2D3250;
+    border-top: 3px solid #FF6B35;
     border-radius: 16px; padding: 1.5rem; margin-bottom: 1.5rem;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 .instruction-title {
     font-family: 'Prompt', sans-serif;
-    font-size: .95rem; font-weight: 600; color: #1A202C; margin-bottom: .8rem;
+    font-size: .95rem; font-weight: 600; color: #F0F4FF; margin-bottom: .8rem;
 }
 .instruction-steps { list-style: none; padding: 0; margin: 0; }
 .instruction-steps li {
     font-family: 'Sarabun', sans-serif;
-    font-size: .88rem; color: #4A5568; line-height: 1.6;
+    font-size: .88rem; color: #94A3B8; line-height: 1.6;
     padding: .3rem 0; display: flex; gap: .7rem; align-items: flex-start;
 }
 .step-num {
     display: inline-flex; align-items: center; justify-content: center;
     width: 22px; height: 22px; border-radius: 50%;
-    background: rgba(232,93,4,0.12); color: #E85D04;
+    background: rgba(255,107,53,0.15); color: #FF6B35;
     font-size: .72rem; font-weight: 700; flex-shrink: 0; margin-top: .1rem;
     font-family: 'Prompt', sans-serif;
 }
 
 .panel {
-    background: #FFFFFF; border: 1px solid #E2E8F0;
-    border-top: 3px solid #E85D04;
+    background: #1A1D2E; border: 1px solid #2D3250;
+    border-top: 3px solid #FF6B35;
     border-radius: 16px; padding: 1.8rem; margin-bottom: 1rem;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
-.panel.purple-top { border-top-color: #7C3AED; }
+.panel.purple-top { border-top-color: #9D6FFF; }
 
 .panel-title {
     font-family: 'Prompt', sans-serif;
     font-size: .82rem; font-weight: 600; letter-spacing: .08em;
-    text-transform: uppercase; color: #718096;
+    text-transform: uppercase; color: #64748B;
     margin-bottom: 1.2rem; display: flex; align-items: center; gap: .5rem;
 }
-.panel-title::after { content: ''; flex: 1; height: 1px; background: #E2E8F0; }
+.panel-title::after { content: ''; flex: 1; height: 1px; background: #2D3250; }
 
 /* Field explanation */
 .field-explain {
-    background: #F7FAFC; border: 1px solid #E2E8F0;
+    background: #1E2235; border: 1px solid #2D3250;
     border-radius: 10px; padding: .7rem 1rem; margin: .3rem 0 .8rem;
-    font-family: 'Sarabun', sans-serif; font-size: .82rem; color: #718096; line-height: 1.6;
+    font-family: 'Sarabun', sans-serif; font-size: .82rem; color: #64748B; line-height: 1.6;
 }
-.field-explain b { color: #4A5568; }
+.field-explain b { color: #94A3B8; }
 
 .stButton > button[kind="primary"] {
-    background: linear-gradient(135deg, #E85D04, #C2410C) !important;
+    background: linear-gradient(135deg, #FF6B35, #E85D04) !important;
     border: none !important; border-radius: 12px !important; color: white !important;
     font-family: 'Sarabun', sans-serif !important; font-weight: 700 !important;
     font-size: .95rem !important; padding: .85rem 1.5rem !important;
@@ -129,25 +129,25 @@ section.main > div { padding: 2rem 2.5rem; }
 }
 
 .tier-high {
-    background: linear-gradient(135deg, #ECFDF5, #D1FAE5);
-    border: 1px solid rgba(5,150,105,0.25);
+    background: linear-gradient(135deg, #0D2420, #0A1E1B);
+    border: 1px solid rgba(52,211,153,0.3);
 }
 .tier-med {
-    background: linear-gradient(135deg, #FFFBEB, #FEF3C7);
-    border: 1px solid rgba(234,179,8,0.25);
+    background: linear-gradient(135deg, #1E1608, #1A1308);
+    border: 1px solid rgba(251,191,36,0.3);
 }
 .tier-low {
-    background: linear-gradient(135deg, #FEF2F2, #FECACA);
-    border: 1px solid rgba(239,68,68,0.25);
+    background: linear-gradient(135deg, #200A0A, #1A0808);
+    border: 1px solid rgba(248,113,113,0.3);
 }
-.tier-label-high { color: rgba(5,150,105,0.7); }
-.tier-label-med  { color: rgba(180,83,9,0.7); }
-.tier-label-low  { color: rgba(185,28,28,0.7); }
+.tier-label-high { color: rgba(52,211,153,0.8); }
+.tier-label-med  { color: rgba(251,191,36,0.8); }
+.tier-label-low  { color: rgba(248,113,113,0.8); }
 
 /* Tier explanation boxes */
 .tier-explain-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: .8rem; margin-top: .8rem; }
 .tier-explain-card {
-    background: #F7FAFC; border: 1px solid #E2E8F0;
+    background: #1E2235; border: 1px solid #2D3250;
     border-radius: 10px; padding: .9rem; text-align: center;
     font-family: 'Sarabun', sans-serif;
 }
@@ -156,51 +156,51 @@ section.main > div { padding: 2rem 2.5rem; }
     font-family: 'Prompt', sans-serif; font-size: .82rem; font-weight: 600;
     margin-bottom: .4rem;
 }
-.teb-high { background: rgba(5,150,105,0.10); color: #059669; }
-.teb-med  { background: rgba(234,179,8,0.10);  color: #B45309; }
-.teb-low  { background: rgba(239,68,68,0.10);  color: #DC2626; }
+.teb-high { background: rgba(52,211,153,0.14); color: #34D399; }
+.teb-med  { background: rgba(251,191,36,0.14); color: #FBBF24; }
+.teb-low  { background: rgba(248,113,113,0.14); color: #F87171; }
 .tier-explain-range {
     font-size: .78rem; font-weight: 600; color: #2D3748; margin-bottom: .3rem;
 }
-.tier-explain-desc { font-size: .76rem; color: #718096; line-height: 1.55; }
+.tier-explain-desc { font-size: .76rem; color: #64748B; line-height: 1.55; }
 
 /* probability bars */
 .prob-row { margin-bottom: .8rem; }
 .prob-header {
     display: flex; justify-content: space-between;
     font-family: 'Sarabun', sans-serif;
-    font-size: .86rem; color: #718096; margin-bottom: .3rem;
+    font-size: .86rem; color: #64748B; margin-bottom: .3rem;
 }
 .prob-label { font-weight: 700; color: #2D3748; }
 .prob-val   { font-weight: 700; }
-.prob-bar-bg { background: #EDF2F7; border-radius: 999px; height: 8px; overflow: hidden; }
+.prob-bar-bg { background: #252A3C; border-radius: 999px; height: 8px; overflow: hidden; }
 .prob-bar-fill { height: 100%; border-radius: 999px; }
 
 .placeholder {
-    background: #FFFFFF; border: 2px dashed #E2E8F0;
+    background: #1A1D2E; border: 2px dashed #3D4370;
     border-radius: 16px; padding: 4rem 2rem; text-align: center;
     box-shadow: 0 2px 12px rgba(0,0,0,0.04);
 }
 .placeholder-icon { font-size: 2.5rem; opacity: .4; margin-bottom: 1rem; }
 .placeholder-text {
     font-family: 'Sarabun', sans-serif;
-    font-size: .95rem; color: #A0AEC0; line-height: 1.7;
+    font-size: .95rem; color: #475569; line-height: 1.7;
 }
 
 label {
-    color: #718096 !important;
+    color: #64748B !important;
     font-family: 'Sarabun', sans-serif !important;
     font-size: .88rem !important;
 }
 [data-testid="stNumberInput"] input, [data-testid="stSelectbox"] > div > div,
 [data-testid="stTextInput"] input {
-    background: #FFFFFF !important; border: 1px solid #E2E8F0 !important;
-    border-radius: 10px !important; color: #2D3748 !important;
+    background: #1E2235 !important; border: 1px solid #2D3250 !important;
+    border-radius: 10px !important; color: #E2E8F0 !important;
     font-family: 'Sarabun', sans-serif !important;
 }
 [data-testid="stNumberInput"] input:focus, [data-testid="stTextInput"] input:focus {
-    border-color: #E85D04 !important;
-    box-shadow: 0 0 0 3px rgba(232,93,4,0.1) !important;
+    border-color: #FF6B35 !important;
+    box-shadow: 0 0 0 3px rgba(255,107,53,0.15) !important;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -316,7 +316,7 @@ with col_right:
             ]
             tier_cls = ['tier-low', 'tier-med', 'tier-high']
             lbl_cls  = ['tier-label-low', 'tier-label-med', 'tier-label-high']
-            colors   = ['#DC2626', '#B45309', '#059669']
+            colors   = ['#F87171', '#FBBF24', '#34D399']
             icons    = ['🔴', '🟡', '🟢']
 
             name_display = product_name.strip() or category
@@ -337,7 +337,7 @@ with col_right:
 
             # Probability bars
             st.markdown('<div class="panel" style="border-top-color:#718096"><div class="panel-title">ความน่าจะเป็นแต่ละระดับ</div>', unsafe_allow_html=True)
-            bar_colors = ['#DC2626', '#B45309', '#059669']
+            bar_colors = ['#F87171', '#FBBF24', '#34D399']
             for i, (lbl, rng, p, c) in enumerate(zip(labels, ranges, proba, bar_colors)):
                 pct = p * 100
                 st.markdown(f"""
@@ -380,7 +380,7 @@ with col_right:
             <div class="placeholder-text">
                 ใส่ข้อมูลสินค้าทางซ้าย<br>
                 แล้วกด <b style="color:#E85D04">ทำนายยอดขาย</b><br><br>
-                <span style="font-size:.85rem; color:#CBD5E0">
+                <span style="font-size:.85rem; color:#475569">
                     โมเดลจะทำนายว่าสินค้านี้มียอดขาย<br>
                     ระดับ Low / Medium / High ต่อเดือน
                 </span>
@@ -411,7 +411,7 @@ st.markdown("""
             <div class="tier-explain-desc">ยอดขายต่ำ อาจเป็น niche product หรือยังไม่เป็นที่รู้จัก</div>
         </div>
     </div>
-    <div style="margin-top:1rem; font-family:'Sarabun',sans-serif; font-size:.82rem; color:#718096; line-height:1.7; padding:.8rem 1rem; background:#F7FAFC; border-radius:10px; border:1px solid #E2E8F0;">
+    <div style="margin-top:1rem; font-family:'Sarabun',sans-serif; font-size:.82rem; color:#718096; line-height:1.7; padding:.8rem 1rem; background:#F7FAFC; border-radius:10px; border:1px solid #2D3250;">
         <strong style="color:#4A5568;">หมายเหตุ:</strong>
         ผลทำนายอิงจากข้อมูล Amazon Products Dataset 2023 และพฤติกรรมการซื้อในช่วงนั้น
         ตัวเลข "ซื้อ/เดือน" มาจากฟีเจอร์ <code>boughtInLastMonth</code> ใน dataset

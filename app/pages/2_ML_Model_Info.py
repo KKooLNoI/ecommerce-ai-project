@@ -10,24 +10,24 @@ st.markdown("""
 
 *, *::before, *::after { box-sizing: border-box; }
 html, body, [data-testid="stAppViewContainer"] {
-    background: #F0F4F8 !important;
+    background: #0F1117 !important;
     font-family: 'Sarabun', sans-serif;
-    color: #2D3748;
+    color: #2D3250;
 }
 [data-testid="stSidebar"] {
-    background: #FFFFFF !important;
-    border-right: 1px solid #E2E8F0 !important;
+    background: #1A1D2E !important;
+    border-right: 1px solid #2D3250 !important;
 }
 [data-testid="stSidebar"] * {
     font-family: 'Sarabun', sans-serif !important;
-    color: #2D3748 !important;
+    color: #2D3250 !important;
 }
 section.main > div { padding: 2rem 2.5rem; }
 [data-testid="stDecoration"], header { display: none !important; }
 
 .page-header {
     padding: 1.5rem 0 2rem;
-    border-bottom: 1px solid #E2E8F0;
+    border-bottom: 1px solid #2D3250;
     margin-bottom: 2rem;
 }
 .page-eyebrow {
@@ -37,11 +37,11 @@ section.main > div { padding: 2rem 2.5rem; }
 }
 .page-title {
     font-family: 'Prompt', sans-serif;
-    font-size: 2rem; font-weight: 700; color: #1A202C;
+    font-size: 2rem; font-weight: 700; color: #F0F4FF;
 }
 .page-sub {
     font-family: 'Sarabun', sans-serif;
-    font-size: .95rem; color: #4A5568; margin-top: .4rem; line-height: 1.6;
+    font-size: .95rem; color: #94A3B8; margin-top: .4rem; line-height: 1.6;
 }
 
 .metric-row {
@@ -49,78 +49,78 @@ section.main > div { padding: 2rem 2.5rem; }
     gap: 1rem; margin-bottom: 2rem;
 }
 .metric-box {
-    background: #FFFFFF; border: 1px solid #E2E8F0;
+    background: #1A1D2E; border: 1px solid #2D3250;
     border-radius: 16px; padding: 1.3rem; text-align: center;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 .metric-val {
     font-family: 'Prompt', sans-serif;
-    font-size: 1.7rem; font-weight: 700; color: #E85D04;
+    font-size: 1.7rem; font-weight: 700; color: #FF6B35;
 }
 .metric-label {
     font-family: 'Sarabun', sans-serif;
-    font-size: .75rem; color: #718096; margin-top: .2rem;
+    font-size: .75rem; color: #64748B; margin-top: .2rem;
 }
 
 .panel {
-    background: #FFFFFF; border: 1px solid #E2E8F0;
-    border-top: 3px solid #E85D04;
+    background: #1A1D2E; border: 1px solid #2D3250;
+    border-top: 3px solid #FF6B35;
     border-radius: 16px; padding: 1.8rem; margin-bottom: 1.5rem;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
-.panel.purple-top { border-top-color: #7C3AED; }
-.panel.blue-top   { border-top-color: #2563EB; }
-.panel.green-top  { border-top-color: #059669; }
+.panel.purple-top { border-top-color: #9D6FFF; }
+.panel.blue-top   { border-top-color: #60A5FA; }
+.panel.green-top  { border-top-color: #34D399; }
 
 .panel-title {
     font-family: 'Prompt', sans-serif;
     font-size: .85rem; font-weight: 600; letter-spacing: .08em;
-    text-transform: uppercase; color: #718096;
+    text-transform: uppercase; color: #64748B;
     margin-bottom: 1.4rem; display: flex; align-items: center; gap: .5rem;
 }
-.panel-title::after { content: ''; flex: 1; height: 1px; background: #E2E8F0; }
+.panel-title::after { content: ''; flex: 1; height: 1px; background: #2D3250; }
 
 /* Theory boxes */
 .theory-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
 .theory-card {
-    background: #F7FAFC; border: 1px solid #E2E8F0;
+    background: #1E2235; border: 1px solid #2D3250;
     border-radius: 12px; padding: 1.2rem;
 }
 .theory-card-icon { font-size: 1.3rem; margin-bottom: .5rem; }
 .theory-card-title {
     font-family: 'Prompt', sans-serif;
-    font-size: .95rem; font-weight: 600; color: #1A202C; margin-bottom: .5rem;
+    font-size: .95rem; font-weight: 600; color: #F0F4FF; margin-bottom: .5rem;
 }
 .theory-card-badge {
     display: inline-block; padding: .2rem .6rem; border-radius: 6px;
     font-family: 'Sarabun', sans-serif;
     font-size: .68rem; font-weight: 600; margin-bottom: .5rem;
 }
-.badge-orange { background: rgba(232,93,4,0.10); color: #E85D04; }
-.badge-purple { background: rgba(124,58,237,0.10); color: #7C3AED; }
-.badge-blue   { background: rgba(37,99,235,0.10); color: #2563EB; }
-.badge-green  { background: rgba(5,150,105,0.10); color: #059669; }
+.badge-orange { background: rgba(255,107,53,0.15); color: #FF6B35; }
+.badge-purple { background: rgba(157,111,255,0.15); color: #9D6FFF; }
+.badge-blue   { background: rgba(96,165,250,0.15); color: #60A5FA; }
+.badge-green  { background: rgba(52,211,153,0.15); color: #34D399; }
 .theory-card-text {
     font-family: 'Sarabun', sans-serif;
-    font-size: .86rem; color: #4A5568; line-height: 1.7;
+    font-size: .86rem; color: #94A3B8; line-height: 1.7;
 }
 
 .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: .8rem; }
 .feature-card {
-    background: #F7FAFC; border: 1px solid #E2E8F0;
+    background: #1E2235; border: 1px solid #2D3250;
     border-radius: 12px; padding: .9rem 1rem;
 }
 .feature-name {
     font-family: 'Prompt', sans-serif;
-    font-size: .85rem; font-weight: 600; color: #1A202C; margin-bottom: .2rem;
+    font-size: .85rem; font-weight: 600; color: #F0F4FF; margin-bottom: .2rem;
 }
 .feature-desc {
     font-family: 'Sarabun', sans-serif;
-    font-size: .8rem; color: #4A5568; line-height: 1.55;
+    font-size: .8rem; color: #94A3B8; line-height: 1.55;
 }
 .feature-explain {
     font-family: 'Sarabun', sans-serif;
-    font-size: .78rem; color: #718096; line-height: 1.5;
+    font-size: .78rem; color: #64748B; line-height: 1.5;
     margin-top: .3rem; font-style: italic;
 }
 .feature-tag {
@@ -128,79 +128,79 @@ section.main > div { padding: 2rem 2.5rem; }
     font-family: 'Sarabun', sans-serif;
     font-size: .65rem; font-weight: 600; padding: .2rem .5rem; border-radius: 6px;
 }
-.tag-num { background: rgba(232,93,4,0.10); color: #E85D04; }
-.tag-eng { background: rgba(37,99,235,0.10); color: #2563EB; }
-.tag-cat { background: rgba(124,58,237,0.10); color: #7C3AED; }
+.tag-num { background: rgba(255,107,53,0.15); color: #FF6B35; }
+.tag-eng { background: rgba(96,165,250,0.15); color: #60A5FA; }
+.tag-cat { background: rgba(157,111,255,0.15); color: #9D6FFF; }
 
 .arch-row { display: flex; align-items: stretch; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; }
 .arch-card {
-    flex: 1; min-width: 160px; background: #F7FAFC;
-    border: 1px solid #E2E8F0;
+    flex: 1; min-width: 160px; background: #1E2235;
+    border: 1px solid #2D3250;
     border-radius: 12px; padding: 1.2rem; text-align: center;
 }
 .arch-icon { font-size: 1.5rem; margin-bottom: .5rem; }
 .arch-title {
     font-family: 'Prompt', sans-serif;
-    font-size: .88rem; font-weight: 600; color: #1A202C; margin-bottom: .3rem;
+    font-size: .88rem; font-weight: 600; color: #F0F4FF; margin-bottom: .3rem;
 }
 .arch-sub {
     font-family: 'Sarabun', sans-serif;
-    font-size: .78rem; color: #4A5568; line-height: 1.55;
+    font-size: .78rem; color: #94A3B8; line-height: 1.55;
 }
 .arch-badge {
     display: inline-block; margin-top: .5rem;
     font-family: 'Sarabun', sans-serif;
     font-size: .65rem; font-weight: 600; padding: .22rem .5rem;
-    border-radius: 6px; background: rgba(232,93,4,0.10); color: #E85D04;
+    border-radius: 6px; background: rgba(255,107,53,0.15); color: #FF6B35;
 }
 
 .flow-step {
     display: flex; align-items: flex-start; gap: 1rem; padding: .8rem 1rem;
-    background: #F7FAFC; border-radius: 10px; margin-bottom: .5rem;
-    border: 1px solid #E2E8F0;
+    background: #1E2235; border-radius: 10px; margin-bottom: .5rem;
+    border: 1px solid #2D3250;
 }
 .flow-num {
     width: 28px; height: 28px; border-radius: 50%;
-    background: rgba(232,93,4,0.12); color: #E85D04;
+    background: rgba(255,107,53,0.15); color: #FF6B35;
     font-size: .75rem; font-weight: 700;
     display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     font-family: 'Prompt', sans-serif;
 }
 .flow-text {
     font-family: 'Sarabun', sans-serif;
-    font-size: .86rem; color: #4A5568; line-height: 1.6;
+    font-size: .86rem; color: #94A3B8; line-height: 1.6;
 }
-.flow-text b { color: #1A202C; }
+.flow-text b { color: #F0F4FF; }
 
 .not-trained {
-    background: rgba(234,179,8,0.06); border: 1px solid rgba(234,179,8,0.2);
+    background: rgba(251,191,36,0.08); border: 1px solid rgba(251,191,36,0.25);
     border-radius: 12px; padding: 1rem 1.4rem;
     font-family: 'Sarabun', sans-serif;
 }
-.not-trained b { color: #B45309; }
+.not-trained b { color: #FBBF24; }
 
 .imbalance-box {
-    background: #F7FAFC; border: 1px solid #E2E8F0;
+    background: #1E2235; border: 1px solid #2D3250;
     border-radius: 12px; padding: 1.2rem; margin-bottom: 1rem;
-    font-family: 'Sarabun', sans-serif; font-size: .88rem; color: #4A5568; line-height: 1.8;
+    font-family: 'Sarabun', sans-serif; font-size: .88rem; color: #94A3B8; line-height: 1.8;
 }
-.imbalance-box b { color: #1A202C; }
+.imbalance-box b { color: #F0F4FF; }
 
 .ensemble-result {
-    text-align: center; border: 2px solid rgba(232,93,4,0.25);
-    background: rgba(232,93,4,0.04);
+    text-align: center; border: 2px solid rgba(255,107,53,0.3);
+    background: rgba(255,107,53,0.06);
     border-radius: 12px; padding: 1rem;
     font-family: 'Sarabun', sans-serif;
 }
 .ensemble-result-title {
     font-family: 'Prompt', sans-serif;
-    font-size: 1rem; font-weight: 600; color: #E85D04;
+    font-size: 1rem; font-weight: 600; color: #FF6B35;
 }
 .ensemble-result-sub {
-    font-size: .82rem; color: #4A5568; margin-top: .3rem; line-height: 1.6;
+    font-size: .82rem; color: #94A3B8; margin-top: .3rem; line-height: 1.6;
 }
 
-label { color: #718096 !important; font-family: 'Sarabun', sans-serif !important; font-size: .88rem !important; }
+label { color: #64748B !important; font-family: 'Sarabun', sans-serif !important; font-size: .88rem !important; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -314,8 +314,8 @@ st.markdown("""
     </div>
 </div>
 
-<div style="margin-top:1.2rem; font-family:'Sarabun',sans-serif; font-size:.9rem; color:#4A5568; line-height:1.8; padding: 1rem; background:#F7FAFC; border-radius:12px; border:1px solid #E2E8F0;">
-    <strong style="color:#1A202C; font-family:'Prompt',sans-serif;">ทำไมถึงเลือก 3 โมเดลนี้?</strong><br>
+<div style="margin-top:1.2rem; font-family:'Sarabun',sans-serif; font-size:.9rem; color:#4A5568; line-height:1.8; padding: 1rem; background:#F7FAFC; border-radius:12px; border:1px solid #2D3250;">
+    <strong style="color:#E2E8F0; font-family:'Prompt',sans-serif;">ทำไมถึงเลือก 3 โมเดลนี้?</strong><br>
     เลือกโมเดลที่มี <strong>วิธีคิดต่างกัน</strong> เพื่อให้ความผิดพลาดของแต่ละโมเดลไม่เหมือนกัน
     (Bagging vs Boosting) Random Forest แก้จุดอ่อนของ Boosting ที่ sensitive ต่อ outlier,
     XGBoost ให้ accuracy สูง, HistGBM ประมวลผลเร็วและเสถียร การรวม 3 โมเดลทำให้
@@ -448,11 +448,11 @@ st.markdown("""
 <div class="panel">
 <div class="panel-title">แหล่งอ้างอิง (References)</div>
 <div class="flow-text" style="line-height:2.2">
-<b style="color:#1A202C; font-family:'Prompt',sans-serif;">Dataset</b><br>
+<b style="color:#E2E8F0; font-family:'Prompt',sans-serif;">Dataset</b><br>
 • Sazickka, A. (2023). <i>Amazon Products Dataset 2023</i>. Kaggle.
-  <span style="color:#A0AEC0">— https://www.kaggle.com/datasets/asaniczka/amazon-products-dataset-2023</span><br>
+  <span style="color:#475569">— https://www.kaggle.com/datasets/asaniczka/amazon-products-dataset-2023</span><br>
 <br>
-<b style="color:#1A202C; font-family:'Prompt',sans-serif;">Algorithms</b><br>
+<b style="color:#E2E8F0; font-family:'Prompt',sans-serif;">Algorithms</b><br>
 • Breiman, L. (2001). Random Forests. <i>Machine Learning</i>, 45(1), 5–32.
   doi:10.1023/A:1010933404324<br>
 • Chen, T., &amp; Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System.
@@ -462,7 +462,7 @@ st.markdown("""
 • Chawla, N. V., et al. (2002). SMOTE: Synthetic Minority Over-sampling Technique.
   <i>JAIR</i>, 16, 321–357.<br>
 <br>
-<b style="color:#1A202C; font-family:'Prompt',sans-serif;">Libraries</b><br>
+<b style="color:#E2E8F0; font-family:'Prompt',sans-serif;">Libraries</b><br>
 • Pedregosa, F., et al. (2011). Scikit-learn: Machine Learning in Python. <i>JMLR</i>, 12, 2825–2830.<br>
 • XGBoost Documentation. — https://xgboost.readthedocs.io<br>
 • Lemaître, G., et al. (2017). Imbalanced-learn. <i>JMLR</i>, 18(17), 1–5.

@@ -12,24 +12,24 @@ st.markdown("""
 
 *, *::before, *::after { box-sizing: border-box; }
 html, body, [data-testid="stAppViewContainer"] {
-    background: #F0F4F8 !important;
+    background: #0F1117 !important;
     font-family: 'Sarabun', sans-serif;
-    color: #2D3748;
+    color: #2D3250;
 }
 [data-testid="stSidebar"] {
-    background: #FFFFFF !important;
-    border-right: 1px solid #E2E8F0 !important;
+    background: #1A1D2E !important;
+    border-right: 1px solid #2D3250 !important;
 }
 [data-testid="stSidebar"] * {
     font-family: 'Sarabun', sans-serif !important;
-    color: #2D3748 !important;
+    color: #2D3250 !important;
 }
 section.main > div { padding: 2rem 2.5rem; }
 [data-testid="stDecoration"], header { display: none !important; }
 
 .page-header {
     padding: 1.5rem 0 2rem;
-    border-bottom: 1px solid #E2E8F0;
+    border-bottom: 1px solid #2D3250;
     margin-bottom: 2rem;
 }
 .page-eyebrow {
@@ -39,57 +39,57 @@ section.main > div { padding: 2rem 2.5rem; }
 }
 .page-title {
     font-family: 'Prompt', sans-serif;
-    font-size: 2rem; font-weight: 700; color: #1A202C;
+    font-size: 2rem; font-weight: 700; color: #F0F4FF;
 }
 .page-sub {
     font-family: 'Sarabun', sans-serif;
-    font-size: .95rem; color: #4A5568; margin-top: .4rem; line-height: 1.6;
+    font-size: .95rem; color: #94A3B8; margin-top: .4rem; line-height: 1.6;
 }
 
 /* Instruction panel */
 .instruction-panel {
-    background: #FFFFFF; border: 1px solid #E2E8F0;
-    border-top: 3px solid #7C3AED;
+    background: #1A1D2E; border: 1px solid #2D3250;
+    border-top: 3px solid #9D6FFF;
     border-radius: 16px; padding: 1.5rem; margin-bottom: 1.5rem;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 .instruction-title {
     font-family: 'Prompt', sans-serif;
-    font-size: .95rem; font-weight: 600; color: #1A202C; margin-bottom: .8rem;
+    font-size: .95rem; font-weight: 600; color: #F0F4FF; margin-bottom: .8rem;
 }
 .instruction-steps { list-style: none; padding: 0; margin: 0; }
 .instruction-steps li {
     font-family: 'Sarabun', sans-serif;
-    font-size: .88rem; color: #4A5568; line-height: 1.6;
+    font-size: .88rem; color: #94A3B8; line-height: 1.6;
     padding: .3rem 0; display: flex; gap: .7rem; align-items: flex-start;
 }
 .step-num {
     display: inline-flex; align-items: center; justify-content: center;
     width: 22px; height: 22px; border-radius: 50%;
-    background: rgba(124,58,237,0.12); color: #7C3AED;
+    background: rgba(157,111,255,0.15); color: #9D6FFF;
     font-size: .72rem; font-weight: 700; flex-shrink: 0; margin-top: .1rem;
     font-family: 'Prompt', sans-serif;
 }
 
 .panel {
-    background: #FFFFFF; border: 1px solid #E2E8F0;
-    border-top: 3px solid #7C3AED;
+    background: #1A1D2E; border: 1px solid #2D3250;
+    border-top: 3px solid #9D6FFF;
     border-radius: 16px; padding: 1.8rem; margin-bottom: 1rem;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 .panel.orange-top { border-top-color: #E85D04; }
-.panel.neutral-top { border-top-color: #A0AEC0; }
+.panel.neutral-top { border-top-color: #475569; }
 
 .panel-title {
     font-family: 'Prompt', sans-serif;
     font-size: .82rem; font-weight: 600; letter-spacing: .08em;
-    text-transform: uppercase; color: #718096;
+    text-transform: uppercase; color: #64748B;
     margin-bottom: 1.2rem; display: flex; align-items: center; gap: .5rem;
 }
-.panel-title::after { content: ''; flex: 1; height: 1px; background: #E2E8F0; }
+.panel-title::after { content: ''; flex: 1; height: 1px; background: #2D3250; }
 
 .stButton > button[kind="primary"] {
-    background: linear-gradient(135deg, #7C3AED, #6D28D9) !important;
+    background: linear-gradient(135deg, #9D6FFF, #7C3AED) !important;
     border: none !important; border-radius: 12px !important; color: white !important;
     font-family: 'Sarabun', sans-serif !important; font-weight: 700 !important;
     font-size: .95rem !important; padding: .85rem 1.5rem !important;
@@ -103,25 +103,25 @@ section.main > div { padding: 2rem 2.5rem; }
 
 /* Top prediction card */
 .top-wrap {
-    background: linear-gradient(135deg, #F5F3FF, #EDE9FE);
-    border: 1px solid rgba(124,58,237,0.2);
+    background: linear-gradient(135deg, #1A152E, #14102A);
+    border: 1px solid rgba(157,111,255,0.3);
     border-radius: 16px; padding: 2rem 1.8rem; text-align: center;
     position: relative; overflow: hidden; margin-bottom: 1rem;
     box-shadow: 0 4px 20px rgba(124,58,237,0.10);
 }
 .top-wrap::before {
     content: ''; position: absolute; inset: 0;
-    background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(124,58,237,0.10) 0%, transparent 70%);
+    background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(157,111,255,0.15) 0%, transparent 70%);
 }
 .top-label {
     font-family: 'Sarabun', sans-serif;
     font-size: .72rem; font-weight: 700; letter-spacing: .15em;
-    text-transform: uppercase; color: rgba(124,58,237,0.6); margin-bottom: .5rem;
+    text-transform: uppercase; color: rgba(157,111,255,0.8); margin-bottom: .5rem;
 }
 .top-value {
     font-family: 'Prompt', sans-serif;
     font-size: 2rem; font-weight: 700; line-height: 1.2;
-    margin-bottom: .3rem; color: #1A202C;
+    margin-bottom: .3rem; color: #F0F4FF;
 }
 .top-conf {
     font-family: 'Sarabun', sans-serif;
@@ -129,13 +129,13 @@ section.main > div { padding: 2rem 2.5rem; }
 }
 .top-sub {
     font-family: 'Sarabun', sans-serif;
-    font-size: .82rem; color: #A0AEC0; margin-top: .3rem;
+    font-size: .82rem; color: #475569; margin-top: .3rem;
 }
 
 /* Confidence meaning */
 .conf-explain-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: .7rem; margin: .8rem 0; }
 .conf-explain-card {
-    background: #F7FAFC; border: 1px solid #E2E8F0;
+    background: #1E2235; border: 1px solid #2D3250;
     border-radius: 10px; padding: .8rem; text-align: center;
     font-family: 'Sarabun', sans-serif;
 }
@@ -143,11 +143,11 @@ section.main > div { padding: 2rem 2.5rem; }
     display: inline-block; padding: .2rem .7rem; border-radius: 999px;
     font-size: .78rem; font-weight: 600; margin-bottom: .3rem;
 }
-.conf-high { background: rgba(5,150,105,0.10); color: #059669; }
-.conf-med  { background: rgba(234,179,8,0.10);  color: #B45309; }
-.conf-low  { background: rgba(239,68,68,0.10);  color: #DC2626; }
+.conf-high { background: rgba(52,211,153,0.14); color: #34D399; }
+.conf-med  { background: rgba(251,191,36,0.14); color: #FBBF24; }
+.conf-low  { background: rgba(248,113,113,0.14); color: #F87171; }
 .conf-range { font-size: .78rem; font-weight: 600; color: #2D3748; margin-bottom: .2rem; }
-.conf-desc  { font-size: .74rem; color: #718096; line-height: 1.5; }
+.conf-desc  { font-size: .74rem; color: #64748B; line-height: 1.5; }
 
 /* probability bars */
 .prob-row { margin-bottom: .8rem; }
@@ -157,31 +157,31 @@ section.main > div { padding: 2rem 2.5rem; }
     font-size: .86rem; margin-bottom: .3rem;
 }
 .prob-label { font-weight: 600; color: #2D3748; }
-.prob-val   { color: #7C3AED; font-weight: 700; }
-.prob-bar-bg { background: #EDF2F7; border-radius: 999px; height: 8px; overflow: hidden; }
+.prob-val   { color: #9D6FFF; font-weight: 700; }
+.prob-bar-bg { background: #252A3C; border-radius: 999px; height: 8px; overflow: hidden; }
 .prob-bar-fill { height: 100%; border-radius: 999px; }
 
 .placeholder {
-    background: #FFFFFF; border: 2px dashed #E2E8F0;
+    background: #1A1D2E; border: 2px dashed #3D4370;
     border-radius: 16px; padding: 4rem 2rem; text-align: center;
     box-shadow: 0 2px 12px rgba(0,0,0,0.04);
 }
 .placeholder-icon { font-size: 2.5rem; opacity: .4; margin-bottom: 1rem; }
 .placeholder-text {
     font-family: 'Sarabun', sans-serif;
-    font-size: .95rem; color: #A0AEC0; line-height: 1.7;
+    font-size: .95rem; color: #475569; line-height: 1.7;
 }
 
 .info-pill {
     display: inline-flex; gap: .4rem; align-items: center;
-    background: rgba(124,58,237,0.07); border: 1px solid rgba(124,58,237,0.15);
+    background: rgba(157,111,255,0.10); border: 1px solid rgba(157,111,255,0.2);
     border-radius: 8px; padding: .4rem .8rem;
     font-family: 'Sarabun', sans-serif;
-    font-size: .78rem; color: #7C3AED; margin: .2rem;
+    font-size: .78rem; color: #9D6FFF; margin: .2rem;
 }
 
 label {
-    color: #718096 !important;
+    color: #64748B !important;
     font-family: 'Sarabun', sans-serif !important;
     font-size: .88rem !important;
 }
@@ -339,13 +339,13 @@ with col_right:
             for rank, (cat, prob) in enumerate(results, 1):
                 pct = prob * 100
                 if rank == 1:
-                    bar_color = 'linear-gradient(90deg,#7C3AED,#6D28D9)'
-                    label_color = '#1A202C'
-                    val_color = '#7C3AED'
+                    bar_color = 'linear-gradient(90deg,#9D6FFF,#7C3AED)'
+                    label_color = '#E2E8F0'
+                    val_color = '#9D6FFF'
                 else:
-                    bar_color = 'linear-gradient(90deg,#CBD5E0,#A0AEC0)'
-                    label_color = '#718096'
-                    val_color = '#A0AEC0'
+                    bar_color = 'linear-gradient(90deg,#374151,#2D3250)'
+                    label_color = '#64748B'
+                    val_color = '#475569'
                 st.markdown(f"""
                 <div class="prob-row">
                     <div class="prob-header">
@@ -366,7 +366,7 @@ with col_right:
             <div class="placeholder-text">
                 อัปโหลดรูปสินค้าทางซ้าย<br>
                 แล้วกด <b style="color:#7C3AED">จำแนกรูปภาพ</b><br><br>
-                <span style="font-size:.85rem; color:#CBD5E0">
+                <span style="font-size:.85rem; color:#475569">
                     CNN จะทำนายว่าสินค้าในรูป<br>
                     อยู่ใน category ไหน พร้อม Top-5
                 </span>
@@ -381,7 +381,7 @@ st.markdown("""
 <div class="panel neutral-top" style="margin-top:1.5rem">
     <div class="panel-title">Top-5 Predictions คืออะไร และ Confidence Score หมายความว่าอย่างไร?</div>
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.2rem;">
-        <div style="background:#F7FAFC; border:1px solid #E2E8F0; border-radius:12px; padding:1.1rem;">
+        <div style="background:#F7FAFC; border:1px solid #2D3250; border-radius:12px; padding:1.1rem;">
             <div style="font-family:'Prompt',sans-serif; font-size:.9rem; font-weight:600; color:#1A202C; margin-bottom:.5rem;">Top-5 Predictions</div>
             <div style="font-family:'Sarabun',sans-serif; font-size:.86rem; color:#4A5568; line-height:1.7;">
                 CNN ไม่ได้บอกแค่ "คำตอบเดียว" แต่ให้ probability สำหรับทุก category
@@ -391,7 +391,7 @@ st.markdown("""
                 Top-5 ช่วยให้เห็นว่าโมเดล "กำลังลังเล" อยู่กับ category ใด
             </div>
         </div>
-        <div style="background:#F7FAFC; border:1px solid #E2E8F0; border-radius:12px; padding:1.1rem;">
+        <div style="background:#F7FAFC; border:1px solid #2D3250; border-radius:12px; padding:1.1rem;">
             <div style="font-family:'Prompt',sans-serif; font-size:.9rem; font-weight:600; color:#1A202C; margin-bottom:.5rem;">Confidence Score</div>
             <div style="font-family:'Sarabun',sans-serif; font-size:.86rem; color:#4A5568; line-height:1.7;">
                 Confidence Score คือ probability (0–100%) ที่ Softmax layer ให้กับ category นั้น

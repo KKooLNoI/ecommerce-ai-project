@@ -10,24 +10,24 @@ st.markdown("""
 
 *, *::before, *::after { box-sizing: border-box; }
 html, body, [data-testid="stAppViewContainer"] {
-    background: #F0F4F8 !important;
+    background: #0F1117 !important;
     font-family: 'Sarabun', sans-serif;
-    color: #2D3748;
+    color: #2D3250;
 }
 [data-testid="stSidebar"] {
-    background: #FFFFFF !important;
-    border-right: 1px solid #E2E8F0 !important;
+    background: #1A1D2E !important;
+    border-right: 1px solid #2D3250 !important;
 }
 [data-testid="stSidebar"] * {
     font-family: 'Sarabun', sans-serif !important;
-    color: #2D3748 !important;
+    color: #2D3250 !important;
 }
 section.main > div { padding: 2rem 2.5rem; }
 [data-testid="stDecoration"], header { display: none !important; }
 
 .page-header {
     padding: 1.5rem 0 2rem;
-    border-bottom: 1px solid #E2E8F0;
+    border-bottom: 1px solid #2D3250;
     margin-bottom: 2rem;
 }
 .page-eyebrow {
@@ -37,11 +37,11 @@ section.main > div { padding: 2rem 2.5rem; }
 }
 .page-title {
     font-family: 'Prompt', sans-serif;
-    font-size: 2rem; font-weight: 700; color: #1A202C;
+    font-size: 2rem; font-weight: 700; color: #F0F4FF;
 }
 .page-sub {
     font-family: 'Sarabun', sans-serif;
-    font-size: .95rem; color: #4A5568; margin-top: .4rem; line-height: 1.6;
+    font-size: .95rem; color: #94A3B8; margin-top: .4rem; line-height: 1.6;
 }
 
 .metric-row {
@@ -49,53 +49,53 @@ section.main > div { padding: 2rem 2.5rem; }
     gap: 1rem; margin-bottom: 2rem;
 }
 .metric-box {
-    background: #FFFFFF; border: 1px solid #E2E8F0;
+    background: #1A1D2E; border: 1px solid #2D3250;
     border-radius: 16px; padding: 1.3rem; text-align: center;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 .metric-val {
     font-family: 'Prompt', sans-serif;
-    font-size: 1.7rem; font-weight: 700; color: #7C3AED;
+    font-size: 1.7rem; font-weight: 700; color: #9D6FFF;
 }
 .metric-label {
     font-family: 'Sarabun', sans-serif;
-    font-size: .75rem; color: #718096; margin-top: .2rem;
+    font-size: .75rem; color: #64748B; margin-top: .2rem;
 }
 
 .panel {
-    background: #FFFFFF; border: 1px solid #E2E8F0;
-    border-top: 3px solid #7C3AED;
+    background: #1A1D2E; border: 1px solid #2D3250;
+    border-top: 3px solid #9D6FFF;
     border-radius: 16px; padding: 1.8rem; margin-bottom: 1.5rem;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
-.panel.orange-top { border-top-color: #E85D04; }
-.panel.blue-top   { border-top-color: #2563EB; }
-.panel.green-top  { border-top-color: #059669; }
+.panel.orange-top { border-top-color: #FF6B35; }
+.panel.blue-top   { border-top-color: #60A5FA; }
+.panel.green-top  { border-top-color: #34D399; }
 
 .panel-title {
     font-family: 'Prompt', sans-serif;
     font-size: .85rem; font-weight: 600; letter-spacing: .08em;
-    text-transform: uppercase; color: #718096;
+    text-transform: uppercase; color: #64748B;
     margin-bottom: 1.4rem; display: flex; align-items: center; gap: .5rem;
 }
-.panel-title::after { content: ''; flex: 1; height: 1px; background: #E2E8F0; }
+.panel-title::after { content: ''; flex: 1; height: 1px; background: #2D3250; }
 
 /* Theory section */
 .theory-box {
-    background: #F7FAFC; border: 1px solid #E2E8F0;
+    background: #1E2235; border: 1px solid #2D3250;
     border-radius: 12px; padding: 1.3rem; margin-bottom: 1rem;
     font-family: 'Sarabun', sans-serif;
 }
 .theory-box-title {
     font-family: 'Prompt', sans-serif;
-    font-size: 1rem; font-weight: 600; color: #1A202C; margin-bottom: .6rem;
+    font-size: 1rem; font-weight: 600; color: #F0F4FF; margin-bottom: .6rem;
 }
 .theory-box-text {
-    font-size: .88rem; color: #4A5568; line-height: 1.8;
+    font-size: .88rem; color: #94A3B8; line-height: 1.8;
 }
-.theory-box-text b { color: #1A202C; }
+.theory-box-text b { color: #F0F4FF; }
 .theory-box-text code {
-    background: #EDF2F7; color: #7C3AED; padding: .1rem .4rem;
+    background: #252A3C; color: #9D6FFF; padding: .1rem .4rem;
     border-radius: 4px; font-size: .82rem;
 }
 
@@ -103,77 +103,77 @@ section.main > div { padding: 2rem 2.5rem; }
 .arch-table th {
     font-family: 'Sarabun', sans-serif;
     font-size: .72rem; font-weight: 700; letter-spacing: .08em;
-    text-transform: uppercase; color: #718096;
-    padding: .6rem .8rem; border-bottom: 2px solid #E2E8F0; text-align: left;
+    text-transform: uppercase; color: #64748B;
+    padding: .6rem .8rem; border-bottom: 2px solid #2D3250; text-align: left;
 }
 .arch-table td {
     font-family: 'Sarabun', sans-serif;
     font-size: .86rem; padding: .75rem .8rem;
-    border-bottom: 1px solid #F0F4F8; color: #4A5568;
+    border-bottom: 1px solid #2D3250; color: #94A3B8;
 }
 .arch-table tr:last-child td { border-bottom: none; }
-.arch-table td:first-child { color: #1A202C; font-weight: 600; font-family: 'Prompt', sans-serif; }
-.arch-table tr.highlight td { background: rgba(124,58,237,0.04); }
+.arch-table td:first-child { color: #F0F4FF; font-weight: 600; font-family: 'Prompt', sans-serif; }
+.arch-table tr.highlight td { background: rgba(157,111,255,0.08); }
 
 .phase-card {
-    background: #F7FAFC; border: 1px solid #E2E8F0;
+    background: #1E2235; border: 1px solid #2D3250;
     border-radius: 12px; padding: 1.3rem 1.5rem; margin-bottom: .8rem;
 }
 .phase-num {
     font-family: 'Sarabun', sans-serif;
     font-size: .68rem; font-weight: 700; letter-spacing: .1em;
-    text-transform: uppercase; color: #7C3AED; margin-bottom: .4rem;
+    text-transform: uppercase; color: #9D6FFF; margin-bottom: .4rem;
 }
 .phase-title {
     font-family: 'Prompt', sans-serif;
-    font-size: .95rem; font-weight: 600; color: #1A202C; margin-bottom: .6rem;
+    font-size: .95rem; font-weight: 600; color: #F0F4FF; margin-bottom: .6rem;
 }
 .phase-detail {
     font-family: 'Sarabun', sans-serif;
-    font-size: .86rem; color: #4A5568; line-height: 1.8;
+    font-size: .86rem; color: #94A3B8; line-height: 1.8;
 }
-.phase-detail b { color: #1A202C; }
+.phase-detail b { color: #F0F4FF; }
 
 .aug-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px,1fr)); gap: .7rem; }
 .aug-card {
-    background: #F7FAFC; border: 1px solid #E2E8F0;
+    background: #1E2235; border: 1px solid #2D3250;
     border-radius: 10px; padding: .85rem 1rem;
 }
 .aug-name {
     font-family: 'Prompt', sans-serif;
-    font-size: .85rem; font-weight: 600; color: #1A202C; margin-bottom: .25rem;
+    font-size: .85rem; font-weight: 600; color: #F0F4FF; margin-bottom: .25rem;
 }
 .aug-val {
     font-family: 'Sarabun', sans-serif;
-    font-size: .8rem; color: #7C3AED;
+    font-size: .8rem; color: #9D6FFF;
 }
 .aug-explain {
     font-family: 'Sarabun', sans-serif;
-    font-size: .76rem; color: #718096; margin-top: .2rem; line-height: 1.5;
+    font-size: .76rem; color: #64748B; margin-top: .2rem; line-height: 1.5;
 }
 
 .not-trained {
-    background: rgba(234,179,8,0.06); border: 1px solid rgba(234,179,8,0.2);
+    background: rgba(251,191,36,0.08); border: 1px solid rgba(251,191,36,0.25);
     border-radius: 12px; padding: 1rem 1.4rem; margin-bottom: 1.5rem;
     font-family: 'Sarabun', sans-serif;
 }
-.not-trained b { color: #B45309; }
+.not-trained b { color: #FBBF24; }
 
 .class-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); gap: .5rem; }
 .class-pill {
-    background: #F7FAFC; border: 1px solid #E2E8F0;
+    background: #1E2235; border: 1px solid #2D3250;
     border-radius: 8px; padding: .5rem .8rem;
     font-family: 'Sarabun', sans-serif;
-    font-size: .82rem; color: #4A5568; text-align: center;
+    font-size: .82rem; color: #94A3B8; text-align: center;
 }
 
 .flow-text {
     font-family: 'Sarabun', sans-serif;
-    font-size: .88rem; color: #4A5568; line-height: 1.8;
+    font-size: .88rem; color: #94A3B8; line-height: 1.8;
 }
-.flow-text b { color: #1A202C; }
+.flow-text b { color: #F0F4FF; }
 
-label { color: #718096 !important; font-family: 'Sarabun', sans-serif !important; font-size: .88rem !important; }
+label { color: #64748B !important; font-family: 'Sarabun', sans-serif !important; font-size: .88rem !important; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -279,8 +279,8 @@ st.markdown("</div>", unsafe_allow_html=True)
 # Training phases
 st.markdown('<div class="panel"><div class="panel-title">กลยุทธ์การเทรน — 2 Phases</div>', unsafe_allow_html=True)
 st.markdown("""
-<div style="background:#F7FAFC; border:1px solid #E2E8F0; border-radius:12px; padding:1rem 1.4rem; margin-bottom:1rem; font-family:'Sarabun',sans-serif; font-size:.88rem; color:#4A5568; line-height:1.8;">
-    <strong style="font-family:'Prompt',sans-serif; color:#1A202C;">ทำไมต้องใช้ 2-Phase Training?</strong><br>
+<div style="background:#1E2235; border:1px solid #2D3250; border-radius:12px; padding:1rem 1.4rem; margin-bottom:1rem; font-family:'Sarabun',sans-serif; font-size:.88rem; color:#94A3B8; line-height:1.8;">
+    <strong style="font-family:'Prompt',sans-serif; color:#E2E8F0;">ทำไมต้องใช้ 2-Phase Training?</strong><br>
     ถ้า fine-tune ทั้งโมเดลตั้งแต่ต้นด้วย learning rate สูง จะทำลาย pretrained weights ที่ดีอยู่แล้ว
     (catastrophic forgetting) การแยกเป็น 2 phase ช่วยให้ custom head เรียนรู้ก่อน
     แล้วค่อย fine-tune base ด้วย learning rate ต่ำมาก
@@ -313,8 +313,8 @@ st.markdown("""
 # Data Augmentation
 st.markdown('<div class="panel orange-top"><div class="panel-title">Data Augmentation (Training Only)</div>', unsafe_allow_html=True)
 st.markdown("""
-<div style="background:#FFF7F0; border:1px solid rgba(232,93,4,0.15); border-radius:10px; padding:.9rem 1.2rem; margin-bottom:1rem; font-family:'Sarabun',sans-serif; font-size:.88rem; color:#4A5568; line-height:1.7;">
-    <strong style="font-family:'Prompt',sans-serif; color:#1A202C;">Data Augmentation คืออะไร?</strong><br>
+<div style="background:rgba(255,107,53,0.06); border:1px solid rgba(255,107,53,0.2); border-radius:10px; padding:.9rem 1.2rem; margin-bottom:1rem; font-family:'Sarabun',sans-serif; font-size:.88rem; color:#94A3B8; line-height:1.7;">
+    <strong style="font-family:'Prompt',sans-serif; color:#E2E8F0;">Data Augmentation คืออะไร?</strong><br>
     การสร้างรูปภาพ "แปลงร่าง" จากรูปต้นฉบับ เช่น หมุน, พลิก, ซูม เพื่อให้โมเดลเห็นรูปแบบที่หลากหลาย
     ช่วยแก้ปัญหา overfitting เมื่อ dataset มีขนาดเล็ก และทำให้โมเดล robust ต่อรูปภาพในชีวิตจริง
     ทำเฉพาะตอน training เท่านั้น — validation/test ใช้รูปต้นฉบับ
@@ -382,11 +382,11 @@ st.markdown("""
 <div class="panel">
 <div class="panel-title">แหล่งอ้างอิง (References)</div>
 <div class="flow-text" style="line-height:2.2">
-<b style="color:#1A202C; font-family:'Prompt',sans-serif;">Dataset</b><br>
+<b style="color:#E2E8F0; font-family:'Prompt',sans-serif;">Dataset</b><br>
 • Rashad, A. E. (2023). <i>Amazon Products Image</i>. Kaggle.
   <span style="color:#A0AEC0">— https://www.kaggle.com/datasets/ahmedelsayedrashad/amazon-products-image</span><br>
 <br>
-<b style="color:#1A202C; font-family:'Prompt',sans-serif;">Neural Network Architecture</b><br>
+<b style="color:#E2E8F0; font-family:'Prompt',sans-serif;">Neural Network Architecture</b><br>
 • Sandler, M., Howard, A., Zhu, M., Zhmoginov, A., &amp; Chen, L.-C. (2018).
   MobileNetV2: Inverted Residuals and Linear Bottlenecks. <i>CVPR 2018</i>.
   doi:10.1109/CVPR.2018.00474<br>
@@ -394,14 +394,14 @@ st.markdown("""
   <i>ICML 2019</i>. arXiv:1905.11946<br>
 • LeCun, Y., Bengio, Y., &amp; Hinton, G. (2015). Deep Learning. <i>Nature</i>, 521, 436–444.<br>
 <br>
-<b style="color:#1A202C; font-family:'Prompt',sans-serif;">Transfer Learning &amp; Training Techniques</b><br>
+<b style="color:#E2E8F0; font-family:'Prompt',sans-serif;">Transfer Learning &amp; Training Techniques</b><br>
 • Yosinski, J., et al. (2014). How Transferable are Features in Deep Neural Networks?
   <i>NeurIPS 2014</i>. arXiv:1411.1792<br>
 • Srivastava, N., et al. (2014). Dropout: A Simple Way to Prevent Neural Networks from Overfitting.
   <i>JMLR</i>, 15(1), 1929–1958.<br>
 • Ioffe, S., &amp; Szegedy, C. (2015). Batch Normalization. <i>ICML 2015</i>. arXiv:1502.03167<br>
 <br>
-<b style="color:#1A202C; font-family:'Prompt',sans-serif;">Framework</b><br>
+<b style="color:#E2E8F0; font-family:'Prompt',sans-serif;">Framework</b><br>
 • Abadi, M., et al. (2016). TensorFlow: A System for Large-Scale Machine Learning.
   <i>OSDI 2016</i>. — https://www.tensorflow.org<br>
 • Keras Documentation. — https://keras.io

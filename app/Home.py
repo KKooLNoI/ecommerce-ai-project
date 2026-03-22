@@ -13,60 +13,60 @@ st.markdown("""
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html, body, [data-testid="stAppViewContainer"] {
-    background: #F0F4F8 !important;
+    background: #0F1117 !important;
     font-family: 'Sarabun', sans-serif;
-    color: #2D3748;
+    color: #2D3250;
 }
 [data-testid="stSidebar"] {
-    background: #FFFFFF !important;
-    border-right: 1px solid #E2E8F0 !important;
+    background: #1A1D2E !important;
+    border-right: 1px solid #2D3250 !important;
 }
 [data-testid="stSidebar"] * {
     font-family: 'Sarabun', sans-serif !important;
-    color: #2D3748 !important;
+    color: #2D3250 !important;
 }
 section.main > div { padding: 0 !important; }
 [data-testid="stDecoration"], header { display: none !important; }
 
 /* Hero */
 .hero {
-    background: linear-gradient(135deg, #FFFFFF 0%, #F7F9FC 50%, #EEF2FF 100%);
+    background: linear-gradient(135deg, #141728 0%, #1A1D2E 50%, #1D1E38 100%);
     padding: 4rem 3rem 3.5rem;
     position: relative; overflow: hidden;
-    border-bottom: 1px solid #E2E8F0;
+    border-bottom: 1px solid #2D3250;
 }
 .hero::before {
     content: '';
     position: absolute; top: -30%; left: -10%;
     width: 50%; height: 150%;
-    background: radial-gradient(ellipse, rgba(232,93,4,0.06) 0%, transparent 65%);
+    background: radial-gradient(ellipse, rgba(255,107,53,0.08) 0%, transparent 65%);
     pointer-events: none;
 }
 .hero::after {
     content: '';
     position: absolute; bottom: -20%; right: -5%;
     width: 40%; height: 120%;
-    background: radial-gradient(ellipse, rgba(124,58,237,0.05) 0%, transparent 65%);
+    background: radial-gradient(ellipse, rgba(157,111,255,0.07) 0%, transparent 65%);
     pointer-events: none;
 }
 .hero-eyebrow {
     display: inline-flex; align-items: center; gap: .5rem;
     font-family: 'Sarabun', sans-serif;
     font-size: .72rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase;
-    color: #E85D04; background: rgba(232,93,4,0.08);
-    border: 1px solid rgba(232,93,4,0.2);
+    color: #FF6B35; background: rgba(255,107,53,0.12);
+    border: 1px solid rgba(255,107,53,0.25);
     border-radius: 999px; padding: .35rem .9rem; margin-bottom: 1.5rem;
 }
 .hero-title {
     font-family: 'Prompt', sans-serif;
     font-size: clamp(2rem, 4.5vw, 3.4rem);
-    font-weight: 700; color: #1A202C; line-height: 1.2;
+    font-weight: 700; color: #F0F4FF; line-height: 1.2;
     margin-bottom: 1rem;
 }
-.hero-title span { color: #E85D04; }
+.hero-title span { color: #FF6B35; }
 .hero-sub {
     font-family: 'Sarabun', sans-serif;
-    font-size: 1.05rem; color: #4A5568; max-width: 600px;
+    font-size: 1.05rem; color: #94A3B8; max-width: 600px;
     line-height: 1.8; margin-bottom: 2rem;
 }
 .hero-pills { display: flex; flex-wrap: wrap; gap: .6rem; }
@@ -76,10 +76,10 @@ section.main > div { padding: 0 !important; }
     padding: .4rem 1rem;
     border-radius: 999px; border: 1px solid;
 }
-.pill-orange { color: #E85D04; background: rgba(232,93,4,0.07); border-color: rgba(232,93,4,0.2); }
-.pill-purple { color: #7C3AED; background: rgba(124,58,237,0.07); border-color: rgba(124,58,237,0.2); }
-.pill-blue   { color: #2563EB; background: rgba(37,99,235,0.07);  border-color: rgba(37,99,235,0.2); }
-.pill-green  { color: #059669; background: rgba(5,150,105,0.07);  border-color: rgba(5,150,105,0.2); }
+.pill-orange { color: #FF6B35; background: rgba(255,107,53,0.12); border-color: rgba(255,107,53,0.3); }
+.pill-purple { color: #9D6FFF; background: rgba(157,111,255,0.12); border-color: rgba(157,111,255,0.3); }
+.pill-blue   { color: #60A5FA; background: rgba(96,165,250,0.12);  border-color: rgba(96,165,250,0.3); }
+.pill-green  { color: #34D399; background: rgba(52,211,153,0.12);  border-color: rgba(52,211,153,0.3); }
 
 /* Content area */
 .content { padding: 3rem 3rem; }
@@ -88,19 +88,19 @@ section.main > div { padding: 0 !important; }
 .section-eyebrow {
     font-family: 'Sarabun', sans-serif;
     font-size: .7rem; font-weight: 700; letter-spacing: .12em;
-    text-transform: uppercase; color: #718096; margin-bottom: .4rem;
+    text-transform: uppercase; color: #64748B; margin-bottom: .4rem;
 }
 .section-title {
     font-family: 'Prompt', sans-serif;
-    font-size: 1.5rem; font-weight: 600; color: #1A202C;
+    font-size: 1.5rem; font-weight: 600; color: #F0F4FF;
 }
 
 /* Nav cards */
 .nav-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 1.2rem; }
 .nav-card {
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
-    border-top: 3px solid #E85D04;
+    background: #1A1D2E;
+    border: 1px solid #2D3250;
+    border-top: 3px solid #FF6B35;
     border-radius: 16px; padding: 1.6rem;
     text-decoration: none; display: block;
     transition: transform .2s, box-shadow .2s;
@@ -108,22 +108,22 @@ section.main > div { padding: 0 !important; }
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 .nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.10); }
-.nav-card.purple-top { border-top-color: #7C3AED; }
-.nav-card.blue-top   { border-top-color: #2563EB; }
-.nav-card.green-top  { border-top-color: #059669; }
+.nav-card.purple-top { border-top-color: #9D6FFF; }
+.nav-card.blue-top   { border-top-color: #60A5FA; }
+.nav-card.green-top  { border-top-color: #34D399; }
 .nav-icon { font-size: 1.7rem; margin-bottom: .9rem; }
 .nav-num {
     font-family: 'Sarabun', sans-serif;
     font-size: .65rem; font-weight: 700; letter-spacing: .1em;
-    text-transform: uppercase; color: #A0AEC0; margin-bottom: .3rem;
+    text-transform: uppercase; color: #475569; margin-bottom: .3rem;
 }
 .nav-title {
     font-family: 'Prompt', sans-serif;
-    font-size: 1rem; font-weight: 600; color: #1A202C; margin-bottom: .4rem;
+    font-size: 1rem; font-weight: 600; color: #F0F4FF; margin-bottom: .4rem;
 }
 .nav-desc  {
     font-family: 'Sarabun', sans-serif;
-    font-size: .88rem; color: #4A5568; line-height: 1.65;
+    font-size: .88rem; color: #94A3B8; line-height: 1.65;
 }
 .nav-tag {
     display: inline-block; margin-top: .8rem;
@@ -132,55 +132,55 @@ section.main > div { padding: 0 !important; }
     text-transform: uppercase; padding: .28rem .65rem;
     border-radius: 8px;
 }
-.tag-ml     { background: rgba(232,93,4,0.10);   color: #E85D04; }
-.tag-cnn    { background: rgba(124,58,237,0.10);  color: #7C3AED; }
-.tag-eda    { background: rgba(37,99,235,0.10);   color: #2563EB; }
-.tag-result { background: rgba(5,150,105,0.10);   color: #059669; }
+.tag-ml     { background: rgba(255,107,53,0.14);  color: #FF6B35; }
+.tag-cnn    { background: rgba(157,111,255,0.14); color: #9D6FFF; }
+.tag-eda    { background: rgba(96,165,250,0.14);  color: #60A5FA; }
+.tag-result { background: rgba(52,211,153,0.14);  color: #34D399; }
 
 /* Explanation cards */
 .explain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 1rem; margin-top: 1.5rem; }
 .explain-card {
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
+    background: #1A1D2E;
+    border: 1px solid #2D3250;
     border-radius: 16px; padding: 1.4rem;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 .explain-card-icon { font-size: 1.4rem; margin-bottom: .6rem; }
 .explain-card-title {
     font-family: 'Prompt', sans-serif;
-    font-size: .95rem; font-weight: 600; color: #1A202C; margin-bottom: .5rem;
+    font-size: .95rem; font-weight: 600; color: #F0F4FF; margin-bottom: .5rem;
 }
 .explain-card-text {
     font-family: 'Sarabun', sans-serif;
-    font-size: .88rem; color: #4A5568; line-height: 1.7;
+    font-size: .88rem; color: #94A3B8; line-height: 1.7;
 }
 
 /* Pipeline diagram */
 .pipeline {
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
+    background: #1A1D2E;
+    border: 1px solid #2D3250;
     border-radius: 16px; padding: 2rem; margin-top: 2rem;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 .pipe-steps { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
 .pipe-step {
-    background: #F7FAFC;
-    border: 1px solid #E2E8F0;
+    background: #1E2235;
+    border: 1px solid #2D3250;
     border-radius: 12px; padding: .75rem 1.1rem;
     text-align: center; min-width: 110px;
 }
 .pipe-step-icon { font-size: 1.1rem; margin-bottom: .25rem; }
 .pipe-step-label {
     font-family: 'Sarabun', sans-serif;
-    font-size: .72rem; font-weight: 600; color: #718096;
+    font-size: .72rem; font-weight: 600; color: #64748B;
 }
-.pipe-arrow { color: #CBD5E0; font-size: 1.2rem; }
+.pipe-arrow { color: #374151; font-size: 1.2rem; }
 
 /* Tier explanation */
 .tier-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin-top: 1.5rem; }
 .tier-card {
-    background: #FFFFFF; border-radius: 16px; padding: 1.3rem;
-    border: 1px solid #E2E8F0;
+    background: #1A1D2E; border-radius: 16px; padding: 1.3rem;
+    border: 1px solid #2D3250;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     text-align: center;
 }
@@ -189,36 +189,40 @@ section.main > div { padding: 0 !important; }
     border-radius: 999px; font-family: 'Prompt', sans-serif;
     font-size: .9rem; font-weight: 600; margin-bottom: .6rem;
 }
-.tier-high { background: rgba(5,150,105,0.1); color: #059669; }
-.tier-med  { background: rgba(234,179,8,0.1);  color: #B45309; }
-.tier-low  { background: rgba(239,68,68,0.1);  color: #DC2626; }
+.tier-high { background: rgba(52,211,153,0.14); color: #34D399; }
+.tier-med  { background: rgba(251,191,36,0.14); color: #FBBF24; }
+.tier-low  { background: rgba(248,113,113,0.14); color: #F87171; }
 .tier-range {
     font-family: 'Sarabun', sans-serif;
     font-size: .82rem; font-weight: 600; color: #2D3748; margin-bottom: .4rem;
 }
 .tier-desc {
     font-family: 'Sarabun', sans-serif;
-    font-size: .82rem; color: #4A5568; line-height: 1.6;
+    font-size: .82rem; color: #94A3B8; line-height: 1.6;
 }
 
 /* Stats */
 .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); gap: 1rem; margin-top: 2rem; }
 .stat-box {
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
+    background: #1A1D2E;
+    border: 1px solid #2D3250;
     border-radius: 16px; padding: 1.2rem; text-align: center;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 .stat-val {
     font-family: 'Prompt', sans-serif;
-    font-size: 1.6rem; font-weight: 700; color: #E85D04;
+    font-size: 1.6rem; font-weight: 700; color: #FF6B35;
 }
 .stat-label {
     font-family: 'Sarabun', sans-serif;
-    font-size: .75rem; color: #718096; margin-top: .2rem;
+    font-size: .75rem; color: #64748B; margin-top: .2rem;
 }
 
-label { color: #718096 !important; font-family: 'Sarabun', sans-serif !important; font-size: .88rem !important; }
+label { color: #64748B !important; font-family: 'Sarabun', sans-serif !important; font-size: .88rem !important; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0F1117; }
+::-webkit-scrollbar-thumb { background: #2D3250; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3D4370; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -381,16 +385,16 @@ st.markdown("""
         <div class="pipe-step"><div class="pipe-step-icon">🌳🚀📈</div><div class="pipe-step-label">RF+XGB+HGB</div></div>
         <div class="pipe-arrow">→</div>
         <div class="pipe-step"><div class="pipe-step-icon">📊</div><div class="pipe-step-label">ML Score</div></div>
-        <div class="pipe-arrow" style="color:#CBD5E0;font-size:1.8rem">⊕</div>
+        <div class="pipe-arrow" style="color:#374151;font-size:1.8rem">⊕</div>
         <div class="pipe-step"><div class="pipe-step-icon">🖼️</div><div class="pipe-step-label">Product Image</div></div>
         <div class="pipe-arrow">→</div>
         <div class="pipe-step"><div class="pipe-step-icon">🧠</div><div class="pipe-step-label">MobileNetV2</div></div>
         <div class="pipe-arrow">→</div>
         <div class="pipe-step"><div class="pipe-step-icon">🎯</div><div class="pipe-step-label">CNN Score</div></div>
         <div class="pipe-arrow">→</div>
-        <div class="pipe-step" style="border-color:rgba(232,93,4,0.3);background:rgba(232,93,4,0.05)">
+        <div class="pipe-step" style="border-color:rgba(255,107,53,0.4);background:rgba(255,107,53,0.08)">
             <div class="pipe-step-icon">🛒</div>
-            <div class="pipe-step-label" style="color:#E85D04">Buy Score</div>
+            <div class="pipe-step-label" style="color:#FF6B35">Buy Score</div>
         </div>
     </div>
 </div>
