@@ -4,7 +4,7 @@ import os
 import json
 from PIL import Image
 
-st.set_page_config(page_title="ทดสอบ CNN Model", page_icon="🧠", layout="wide")
+st.set_page_config(page_title="ทดสอบ CNN Model", page_icon="🧠", layout="wide", initial_sidebar_state="expanded")
 
 st.markdown("""
 <style>

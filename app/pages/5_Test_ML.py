@@ -4,7 +4,7 @@ import pandas as pd
 import os
 import joblib
 
-st.set_page_config(page_title="ทดสอบ ML — ทำนายยอดขาย", page_icon="📦", layout="wide")
+st.set_page_config(page_title="ทดสอบ ML — ทำนายยอดขาย", page_icon="📦", layout="wide", initial_sidebar_state="expanded")
 
 st.markdown("""
 <style>

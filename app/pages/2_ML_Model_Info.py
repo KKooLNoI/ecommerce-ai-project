@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import joblib
 
-st.set_page_config(page_title="ML Model Info", page_icon="🤖", layout="wide")
+st.set_page_config(page_title="ML Model Info", page_icon="🤖", layout="wide", initial_sidebar_state="expanded")
 
 st.markdown("""
 <style>
