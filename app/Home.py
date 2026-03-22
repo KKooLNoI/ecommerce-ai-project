@@ -223,8 +223,114 @@ label { color: #64748B !important; font-family: 'Sarabun', sans-serif !important
 ::-webkit-scrollbar-track { background: #0F1117; }
 ::-webkit-scrollbar-thumb { background: #2D3250; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #3D4370; }
+
+/* ===== SIDEBAR NAVIGATION ===== */
+[data-testid="stSidebarContent"] { padding-top: 0 !important; }
+
+/* Sidebar brand header */
+[data-testid="stSidebarNavItems"] {
+    padding: .5rem 0 1rem;
+}
+[data-testid="stSidebarNavItems"]::before {
+    content: '🛒  E-Commerce AI';
+    display: block;
+    font-family: 'Prompt', sans-serif;
+    font-size: .82rem; font-weight: 700;
+    color: #FF6B35; letter-spacing: .08em; text-transform: uppercase;
+    padding: 1.2rem 1.2rem .9rem;
+    border-bottom: 1px solid #2D3250;
+    margin-bottom: .6rem;
+}
+
+/* Nav links */
+[data-testid="stSidebarNavItems"] a {
+    display: flex !important; align-items: center !important;
+    padding: .65rem 1rem !important;
+    border-radius: 10px !important;
+    margin: .15rem .6rem !important;
+    font-family: 'Sarabun', sans-serif !important;
+    font-size: .88rem !important; font-weight: 500 !important;
+    color: #94A3B8 !important;
+    text-decoration: none !important;
+    transition: all .18s ease !important;
+    border: 1px solid transparent !important;
+    background: transparent !important;
+}
+[data-testid="stSidebarNavItems"] a:hover {
+    background: rgba(255,107,53,0.09) !important;
+    color: #E2E8F0 !important;
+    border-color: rgba(255,107,53,0.2) !important;
+    transform: translateX(4px) !important;
+}
+[data-testid="stSidebarNavItems"] a[aria-current="page"] {
+    background: linear-gradient(90deg, rgba(255,107,53,0.18), rgba(255,107,53,0.06)) !important;
+    color: #FF6B35 !important;
+    border-color: rgba(255,107,53,0.35) !important;
+    font-weight: 700 !important;
+    border-left: 3px solid #FF6B35 !important;
+}
+[data-testid="stSidebarNavItems"] a span,
+[data-testid="stSidebarNavItems"] a p {
+    font-family: 'Sarabun', sans-serif !important;
+    color: inherit !important;
+}
+
+/* Hide Streamlit footer & toolbar */
+footer { visibility: hidden; }
+#MainMenu { display: none !important; }
+[data-testid="stToolbar"] { display: none !important; }
+[data-testid="stDecoration"] { display: none !important; }
 </style>
 """, unsafe_allow_html=True)
+
+# SIDEBAR CONTENT
+with st.sidebar:
+    st.markdown("""
+<style>
+.sb-section {
+    background: #1E2235; border: 1px solid #2D3250;
+    border-radius: 12px; padding: 1rem 1.1rem; margin-bottom: .8rem;
+}
+.sb-section-title {
+    font-family: 'Prompt', sans-serif;
+    font-size: .72rem; font-weight: 700; letter-spacing: .1em;
+    text-transform: uppercase; color: #64748B; margin-bottom: .7rem;
+}
+.sb-badge {
+    display: inline-block; padding: .22rem .65rem;
+    border-radius: 6px; font-family: 'Sarabun', sans-serif;
+    font-size: .72rem; font-weight: 600; margin: .2rem .1rem;
+}
+.sb-badge-o { background: rgba(255,107,53,0.14); color: #FF6B35; }
+.sb-badge-p { background: rgba(157,111,255,0.14); color: #9D6FFF; }
+.sb-badge-g { background: rgba(52,211,153,0.14); color: #34D399; }
+.sb-stat { display: flex; justify-content: space-between; align-items: center;
+    padding: .35rem 0; border-bottom: 1px solid #2D3250; }
+.sb-stat:last-child { border-bottom: none; }
+.sb-stat-label { font-family: 'Sarabun', sans-serif; font-size: .8rem; color: #64748B; }
+.sb-stat-val { font-family: 'Prompt', sans-serif; font-size: .85rem; font-weight: 700; color: #E2E8F0; }
+</style>
+<div class="sb-section">
+    <div class="sb-section-title">โมเดลที่ใช้</div>
+    <span class="sb-badge sb-badge-o">🌳 Random Forest</span>
+    <span class="sb-badge sb-badge-o">🚀 XGBoost</span>
+    <span class="sb-badge sb-badge-o">📈 HistGBM</span>
+    <span class="sb-badge sb-badge-p">🧠 MobileNetV2</span>
+</div>
+<div class="sb-section">
+    <div class="sb-section-title">ผลลัพธ์โมเดล</div>
+    <div class="sb-stat"><span class="sb-stat-label">ML Accuracy</span><span class="sb-stat-val" style="color:#34D399">81.3%</span></div>
+    <div class="sb-stat"><span class="sb-stat-label">F1 Weighted</span><span class="sb-stat-val" style="color:#34D399">0.803</span></div>
+    <div class="sb-stat"><span class="sb-stat-label">Train Samples</span><span class="sb-stat-val">400K</span></div>
+    <div class="sb-stat"><span class="sb-stat-label">CNN Input</span><span class="sb-stat-val">96×96 px</span></div>
+</div>
+<div class="sb-section">
+    <div class="sb-section-title">ระดับยอดขาย</div>
+    <div class="sb-stat"><span class="sb-stat-label">🟢 High</span><span class="sb-stat-val" style="color:#34D399">&gt;500/เดือน</span></div>
+    <div class="sb-stat"><span class="sb-stat-label">🟡 Medium</span><span class="sb-stat-val" style="color:#FBBF24">51–500</span></div>
+    <div class="sb-stat"><span class="sb-stat-label">🔴 Low</span><span class="sb-stat-val" style="color:#F87171">0–50</span></div>
+</div>
+    """, unsafe_allow_html=True)
 
 # HERO
 st.markdown("""
