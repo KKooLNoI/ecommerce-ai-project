@@ -1,0 +1,16 @@
+[theme]
+base = "dark"
+
+[server]
+maxUploadSize = 50
+headless = true
+runOnSave = false
+fileWatcherType = "none"
+enableWebsocketCompression = false
+
+[browser]
+gatherUsageStats = false
+
+[runner]
+magicEnabled = false
+fastReruns = false

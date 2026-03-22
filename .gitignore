@@ -1,0 +1,12 @@
+# Full dataset (375MB - too large for GitHub)
+data/amazon_products.csv
+data/images/
+
+# Virtual environment
+venv/
+__pycache__/
+*.pyc
+.tfcache/
+
+# TF cache
+data/.tfcache/

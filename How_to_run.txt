@@ -1,0 +1,79 @@
+═══════════════════════════════════════════════════════════════
+  🛒 E-Commerce Product Review AI — วิธีรัน
+═══════════════════════════════════════════════════════════════
+
+──────────────────────────────────────────────────────────────
+ STEP 1 — ติดตั้ง dependencies
+──────────────────────────────────────────────────────────────
+  cd ecommerce-project
+  pip install -r requirements.txt
+
+
+──────────────────────────────────────────────────────────────
+ STEP 2 — ดาวน์โหลด Dataset 1 (Structured)
+──────────────────────────────────────────────────────────────
+  ไปที่ → kaggle.com/datasets/asaniczka/amazon-products-dataset-2023-1-4m-products
+  กด Download → แตกไฟล์ → วาง amazon_products.csv ใน:
+  ecommerce-project/data/amazon_products.csv
+
+  หรือใช้ Kaggle CLI:
+  kaggle datasets download -d asaniczka/amazon-products-dataset-2023-1-4m-products --unzip -p data/
+
+
+──────────────────────────────────────────────────────────────
+ STEP 3 — ดาวน์โหลด Dataset 2 (Images)
+──────────────────────────────────────────────────────────────
+  ไปที่ → kaggle.com/datasets/ahmedelsayedrashad/amazon-products-image
+  กด Download → แตกไฟล์ → วางใน:
+  ecommerce-project/data/images/<category>/
+
+  โครงสร้างที่ถูกต้อง:
+  data/
+  └── images/
+      ├── Electronics/
+      │   ├── product1.jpg
+      │   └── ...
+      ├── Clothing/
+      │   └── ...
+      └── ...
+
+  หรือใช้ Kaggle CLI:
+  kaggle datasets download -d ahmedelsayedrashad/amazon-products-image --unzip -p data/images/
+
+
+──────────────────────────────────────────────────────────────
+ STEP 4 — เทรน ML Model (Structured Data)
+──────────────────────────────────────────────────────────────
+  python train_popularity_model.py
+
+  Output:
+  - models/popularity_model.pkl
+  - models/popularity_model_meta.pkl
+  - models/category_map.pkl
+
+
+──────────────────────────────────────────────────────────────
+ STEP 5 — เทรน CNN Model (Image Data)
+──────────────────────────────────────────────────────────────
+  python train_image_model.py
+
+  Output:
+  - models/product_image_model.keras
+  - models/product_image_model_best.keras
+  - models/product_image_model_classes.json
+
+
+──────────────────────────────────────────────────────────────
+ STEP 6 — รัน Web App
+──────────────────────────────────────────────────────────────
+  streamlit run app/Home.py
+
+
+──────────────────────────────────────────────────────────────
+ หมายเหตุ
+──────────────────────────────────────────────────────────────
+  • หน้า 4 (Analyze Product) ใช้ ML ได้แม้ไม่มี CNN model
+  • ถ้ามี GPU (CUDA) → XGBoost จะรันบน GPU อัตโนมัติ
+  • ข้อมูล 1.4M แถว → Script จะ sample 500K อัตโนมัติ
+
+═══════════════════════════════════════════════════════════════
