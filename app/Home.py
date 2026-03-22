@@ -25,7 +25,10 @@ html, body, [data-testid="stAppViewContainer"] {
     font-family: 'Sarabun', sans-serif !important;
 }
 section.main > div { padding: 0 !important; }
-[data-testid="stDecoration"], header { display: none !important; }
+[data-testid="stDecoration"] { display: none !important; }
+header[data-testid="stHeader"] { background: transparent !important; }
+[data-testid="stToolbar"] { display: none !important; }
+[data-testid="stSidebarCollapsedControl"] { display: flex !important; }
 
 /* Hero */
 .hero {

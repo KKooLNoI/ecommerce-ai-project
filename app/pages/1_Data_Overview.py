@@ -17,7 +17,10 @@ html, body, [data-testid="stAppViewContainer"] {
 }
 [data-testid="stSidebar"] { background: #1A1D2E !important; border-right: 1px solid #2D3250 !important; }
 section.main > div { padding: 2rem 2.5rem; }
-[data-testid="stDecoration"], header { display: none !important; }
+[data-testid="stDecoration"] { display: none !important; }
+header[data-testid="stHeader"] { background: transparent !important; }
+[data-testid="stToolbar"] { display: none !important; }
+[data-testid="stSidebarCollapsedControl"] { display: flex !important; }
 
 .page-header { padding: 1.5rem 0 2rem; border-bottom: 1px solid rgba(255,255,255,0.05); margin-bottom: 2.5rem; }
 .page-eyebrow { font-size:.68rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:#f97316; margin-bottom:.5rem; }
