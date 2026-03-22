@@ -27,7 +27,35 @@ section.main > div { padding: 2rem 2.5rem; }
 [data-testid="stDecoration"] { display: none !important; }
 header[data-testid="stHeader"] { background: transparent !important; }
 [data-testid="stToolbar"] { display: none !important; }
-[data-testid="stSidebarCollapsedControl"] { display: flex !important; }
+/* ── SIDEBAR ─────────────────────────────── */
+[data-testid="stSidebarCollapseButton"],
+[data-testid="stSidebarCollapsedControl"] { display: none !important; }
+[data-testid="stSidebarContent"] { padding-top: 0 !important; }
+[data-testid="stSidebarNavItems"]::before {
+    content: '🛒 E-Commerce AI';
+    display: block; font-family: 'Prompt', sans-serif;
+    font-size: .9rem; font-weight: 700; color: #F0F4FF; letter-spacing: .01em;
+    padding: 1.5rem 1.3rem 1rem; border-bottom: 1px solid #2D3250; margin-bottom: .5rem;
+}
+[data-testid="stSidebarNavItems"] a {
+    display: flex !important; align-items: center !important;
+    padding: .62rem 1rem !important; margin: .1rem .65rem !important;
+    border-radius: 10px !important; font-family: 'Sarabun', sans-serif !important;
+    font-size: .875rem !important; font-weight: 500 !important;
+    color: #94A3B8 !important; text-decoration: none !important;
+    transition: all .15s ease !important; border: 1px solid transparent !important;
+}
+[data-testid="stSidebarNavItems"] a:hover {
+    background: rgba(255,107,53,0.08) !important; color: #E2E8F0 !important;
+    border-color: rgba(255,107,53,0.18) !important; transform: translateX(3px) !important;
+}
+[data-testid="stSidebarNavItems"] a[aria-current="page"] {
+    background: linear-gradient(90deg,rgba(255,107,53,.16),rgba(255,107,53,.04)) !important;
+    color: #FF6B35 !important; border-color: rgba(255,107,53,.32) !important;
+    font-weight: 700 !important; border-left: 3px solid #FF6B35 !important;
+}
+[data-testid="stSidebarNavItems"] a span,
+[data-testid="stSidebarNavItems"] a p { color: inherit !important; }
 
 .page-header {
     padding: 1.5rem 0 2rem;
@@ -189,6 +217,16 @@ label {
 }
 
 </style>
+""", unsafe_allow_html=True)
+
+with st.sidebar:
+    st.markdown("""
+<div style="position:fixed;bottom:0;left:0;width:241px;padding:1rem 1.3rem;border-top:1px solid #2D3250;background:#1A1D2E">
+  <div style="font-family:'Sarabun',sans-serif;font-size:.72rem;color:#475569;line-height:1.9">
+    🎓 AI Project · 2024<br>
+    <span style="color:#3D4766">MobileNetV2 · Ensemble ML</span>
+  </div>
+</div>
 """, unsafe_allow_html=True)
 
 st.markdown("""
