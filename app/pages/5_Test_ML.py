@@ -22,7 +22,6 @@ html, body, [data-testid="stAppViewContainer"] {
 }
 [data-testid="stSidebar"] * {
     font-family: 'Sarabun', sans-serif !important;
-    color: #2D3250 !important;
 }
 section.main > div { padding: 2rem 2.5rem; }
 [data-testid="stDecoration"], header { display: none !important; }
@@ -193,41 +192,6 @@ label {
     font-size: .88rem !important;
 }
 
-/* ===== SIDEBAR NAVIGATION ===== */
-[data-testid="stSidebarContent"] { padding-top: 0 !important; }
-[data-testid="stSidebarNavItems"] { padding: .5rem 0 1rem; }
-[data-testid="stSidebarNavItems"]::before {
-    content: '🛒  E-Commerce AI';
-    display: block; font-family: 'Prompt', sans-serif;
-    font-size: .82rem; font-weight: 700; color: #FF6B35;
-    letter-spacing: .08em; text-transform: uppercase;
-    padding: 1.2rem 1.2rem .9rem;
-    border-bottom: 1px solid #2D3250; margin-bottom: .6rem;
-}
-[data-testid="stSidebarNavItems"] a {
-    display: flex !important; align-items: center !important;
-    padding: .65rem 1rem !important; border-radius: 10px !important;
-    margin: .15rem .6rem !important; font-family: 'Sarabun', sans-serif !important;
-    font-size: .88rem !important; font-weight: 500 !important;
-    color: #94A3B8 !important; text-decoration: none !important;
-    transition: all .18s ease !important; border: 1px solid transparent !important;
-    background: transparent !important;
-}
-[data-testid="stSidebarNavItems"] a:hover {
-    background: rgba(255,107,53,0.09) !important;
-    color: #E2E8F0 !important; border-color: rgba(255,107,53,0.2) !important;
-    transform: translateX(4px) !important;
-}
-[data-testid="stSidebarNavItems"] a[aria-current="page"] {
-    background: linear-gradient(90deg, rgba(255,107,53,0.18), rgba(255,107,53,0.06)) !important;
-    color: #FF6B35 !important; border-color: rgba(255,107,53,0.35) !important;
-    font-weight: 700 !important; border-left: 3px solid #FF6B35 !important;
-}
-[data-testid="stSidebarNavItems"] a span,
-[data-testid="stSidebarNavItems"] a p { font-family: 'Sarabun', sans-serif !important; color: inherit !important; }
-footer { visibility: hidden; }
-#MainMenu { display: none !important; }
-[data-testid="stToolbar"] { display: none !important; }
 [data-testid="stNumberInput"] input, [data-testid="stSelectbox"] > div > div,
 [data-testid="stTextInput"] input {
     background: #1E2235 !important; border: 1px solid #2D3250 !important;
@@ -240,33 +204,6 @@ footer { visibility: hidden; }
 }
 </style>
 """, unsafe_allow_html=True)
-
-# SIDEBAR
-with st.sidebar:
-    st.markdown("""
-<div style="background:#1E2235;border:1px solid #2D3250;border-radius:12px;padding:1rem 1.1rem;margin-bottom:.8rem">
-<div style="font-family:'Prompt',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#64748B;margin-bottom:.8rem">วิธีทำนาย</div>
-<div style="font-family:'Sarabun',sans-serif;font-size:.82rem;color:#94A3B8;line-height:1.8">
-1️⃣ กรอกข้อมูลสินค้า<br>
-2️⃣ เลือกหมวดหมู่<br>
-3️⃣ กดปุ่มทำนาย<br>
-4️⃣ ดูผล Low/Med/High
-</div></div>
-<div style="background:#1E2235;border:1px solid #2D3250;border-radius:12px;padding:1rem 1.1rem">
-<div style="font-family:'Prompt',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#64748B;margin-bottom:.7rem">ระดับยอดขาย</div>
-<div style="display:flex;justify-content:space-between;padding:.3rem 0;border-bottom:1px solid #2D3250">
-  <span style="font-family:'Sarabun',sans-serif;font-size:.8rem;color:#34D399">🟢 High</span>
-  <span style="font-family:'Prompt',sans-serif;font-size:.8rem;font-weight:700;color:#E2E8F0">&gt;500/เดือน</span>
-</div>
-<div style="display:flex;justify-content:space-between;padding:.3rem 0;border-bottom:1px solid #2D3250">
-  <span style="font-family:'Sarabun',sans-serif;font-size:.8rem;color:#FBBF24">🟡 Medium</span>
-  <span style="font-family:'Prompt',sans-serif;font-size:.8rem;font-weight:700;color:#E2E8F0">51–500</span>
-</div>
-<div style="display:flex;justify-content:space-between;padding:.3rem 0">
-  <span style="font-family:'Sarabun',sans-serif;font-size:.8rem;color:#F87171">🔴 Low</span>
-  <span style="font-family:'Prompt',sans-serif;font-size:.8rem;font-weight:700;color:#E2E8F0">0–50</span>
-</div></div>
-    """, unsafe_allow_html=True)
 
 st.markdown("""
 <div class="page-header">

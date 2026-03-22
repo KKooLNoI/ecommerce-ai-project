@@ -20,7 +20,6 @@ html, body, [data-testid="stAppViewContainer"] {
 }
 [data-testid="stSidebar"] * {
     font-family: 'Sarabun', sans-serif !important;
-    color: #2D3250 !important;
 }
 section.main > div { padding: 2rem 2.5rem; }
 [data-testid="stDecoration"], header { display: none !important; }
@@ -174,42 +173,6 @@ section.main > div { padding: 2rem 2.5rem; }
 .flow-text b { color: #F0F4FF; }
 
 label { color: #64748B !important; font-family: 'Sarabun', sans-serif !important; font-size: .88rem !important; }
-
-/* ===== SIDEBAR NAVIGATION ===== */
-[data-testid="stSidebarContent"] { padding-top: 0 !important; }
-[data-testid="stSidebarNavItems"] { padding: .5rem 0 1rem; }
-[data-testid="stSidebarNavItems"]::before {
-    content: '🛒  E-Commerce AI';
-    display: block; font-family: 'Prompt', sans-serif;
-    font-size: .82rem; font-weight: 700; color: #FF6B35;
-    letter-spacing: .08em; text-transform: uppercase;
-    padding: 1.2rem 1.2rem .9rem;
-    border-bottom: 1px solid #2D3250; margin-bottom: .6rem;
-}
-[data-testid="stSidebarNavItems"] a {
-    display: flex !important; align-items: center !important;
-    padding: .65rem 1rem !important; border-radius: 10px !important;
-    margin: .15rem .6rem !important; font-family: 'Sarabun', sans-serif !important;
-    font-size: .88rem !important; font-weight: 500 !important;
-    color: #94A3B8 !important; text-decoration: none !important;
-    transition: all .18s ease !important; border: 1px solid transparent !important;
-    background: transparent !important;
-}
-[data-testid="stSidebarNavItems"] a:hover {
-    background: rgba(157,111,255,0.09) !important;
-    color: #E2E8F0 !important; border-color: rgba(157,111,255,0.2) !important;
-    transform: translateX(4px) !important;
-}
-[data-testid="stSidebarNavItems"] a[aria-current="page"] {
-    background: linear-gradient(90deg, rgba(157,111,255,0.18), rgba(157,111,255,0.06)) !important;
-    color: #9D6FFF !important; border-color: rgba(157,111,255,0.35) !important;
-    font-weight: 700 !important; border-left: 3px solid #9D6FFF !important;
-}
-[data-testid="stSidebarNavItems"] a span,
-[data-testid="stSidebarNavItems"] a p { font-family: 'Sarabun', sans-serif !important; color: inherit !important; }
-footer { visibility: hidden; }
-#MainMenu { display: none !important; }
-[data-testid="stToolbar"] { display: none !important; }
 </style>
 """, unsafe_allow_html=True)
 

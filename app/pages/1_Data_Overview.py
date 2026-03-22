@@ -15,7 +15,7 @@ html, body, [data-testid="stAppViewContainer"] {
     background: #060A10 !important;
     font-family: 'DM Sans', sans-serif; color: #94a3b8;
 }
-[data-testid="stSidebar"] { background: #0B1120 !important; border-right: 1px solid rgba(255,255,255,0.05); }
+[data-testid="stSidebar"] { background: #1A1D2E !important; border-right: 1px solid #2D3250 !important; }
 section.main > div { padding: 2rem 2.5rem; }
 [data-testid="stDecoration"], header { display: none !important; }
 
