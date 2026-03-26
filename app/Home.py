@@ -453,4 +453,73 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+# DATASET SECTION
+st.markdown("""
+<div class="section-header" style="margin-top:2.5rem">
+    <div class="section-eyebrow">Sources</div>
+    <div class="section-title">Dataset ที่ใช้ในโปรเจกต์</div>
+</div>
+<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1.2rem; margin-bottom:2rem">
+
+  <!-- Dataset 1 -->
+  <div style="background:#1A1D2E; border:1px solid #2D3250; border-top:3px solid #FF6B35; border-radius:16px; padding:1.6rem">
+    <div style="display:flex; align-items:center; gap:.7rem; margin-bottom:1rem">
+      <span style="font-size:1.5rem">🗂️</span>
+      <div>
+        <div style="font-family:'Sarabun',sans-serif; font-size:.65rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#FF6B35">ML Model · Structured Data</div>
+        <div style="font-family:'Prompt',sans-serif; font-size:1rem; font-weight:600; color:#F0F4FF; margin-top:.15rem">Amazon Products Dataset 2023</div>
+      </div>
+    </div>
+    <div style="font-family:'Sarabun',sans-serif; font-size:.86rem; color:#94A3B8; line-height:1.8; margin-bottom:1rem">
+      ข้อมูลสินค้า Amazon กว่า <strong style="color:#F0F4FF">1.4 ล้านรายการ</strong> ครอบคลุมหลายหมวดหมู่<br>
+      Features ที่ใช้: ราคา, คะแนนดาว, จำนวนรีวิว, ราคาตั้งต้น, discount %<br>
+      Label: <strong style="color:#FF6B35">boughtInLastMonth</strong> — จำนวนซื้อในเดือนล่าสุด (แบ่งเป็น Low/Med/High)
+    </div>
+    <div style="display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:1rem">
+      <span style="background:rgba(255,107,53,0.12); color:#FF6B35; border:1px solid rgba(255,107,53,0.25); border-radius:8px; padding:.2rem .7rem; font-size:.72rem; font-weight:600">1,426,337 rows</span>
+      <span style="background:rgba(96,165,250,0.12); color:#60A5FA; border:1px solid rgba(96,165,250,0.25); border-radius:8px; padding:.2rem .7rem; font-size:.72rem; font-weight:600">CSV format</span>
+      <span style="background:rgba(52,211,153,0.12); color:#34D399; border:1px solid rgba(52,211,153,0.25); border-radius:8px; padding:.2rem .7rem; font-size:.72rem; font-weight:600">Kaggle</span>
+    </div>
+    <div style="font-family:'Sarabun',sans-serif; font-size:.78rem; color:#64748B; border-top:1px solid #2D3250; padding-top:.9rem">
+      <strong style="color:#94A3B8">ที่มา:</strong> asaniczka (2023). <em>Amazon Products Dataset 2023</em>. Kaggle.<br>
+      <a href="https://www.kaggle.com/datasets/asaniczka/amazon-products-dataset-2023-1-4m-products"
+         target="_blank"
+         style="color:#FF6B35; text-decoration:none; font-weight:600; word-break:break-all">
+        🔗 kaggle.com/datasets/asaniczka/amazon-products-dataset-2023-1-4m-products
+      </a>
+    </div>
+  </div>
+
+  <!-- Dataset 2 -->
+  <div style="background:#1A1D2E; border:1px solid #2D3250; border-top:3px solid #9D6FFF; border-radius:16px; padding:1.6rem">
+    <div style="display:flex; align-items:center; gap:.7rem; margin-bottom:1rem">
+      <span style="font-size:1.5rem">🖼️</span>
+      <div>
+        <div style="font-family:'Sarabun',sans-serif; font-size:.65rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#9D6FFF">CNN Model · Image Data</div>
+        <div style="font-family:'Prompt',sans-serif; font-size:1rem; font-weight:600; color:#F0F4FF; margin-top:.15rem">Amazon Products Image Dataset</div>
+      </div>
+    </div>
+    <div style="font-family:'Sarabun',sans-serif; font-size:.86rem; color:#94A3B8; line-height:1.8; margin-bottom:1rem">
+      รูปภาพสินค้า Amazon แยกตาม <strong style="color:#F0F4FF">category folder</strong><br>
+      ใช้สำหรับเทรน MobileNetV2 จำแนกหมวดหมู่สินค้าจากภาพ<br>
+      วางไฟล์ในโฟลเดอร์ <code style="background:#252A3C; color:#9D6FFF; padding:.1rem .4rem; border-radius:4px">data/images/&lt;category&gt;/</code>
+    </div>
+    <div style="display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:1rem">
+      <span style="background:rgba(157,111,255,0.12); color:#9D6FFF; border:1px solid rgba(157,111,255,0.25); border-radius:8px; padding:.2rem .7rem; font-size:.72rem; font-weight:600">Image folders</span>
+      <span style="background:rgba(96,165,250,0.12); color:#60A5FA; border:1px solid rgba(96,165,250,0.25); border-radius:8px; padding:.2rem .7rem; font-size:.72rem; font-weight:600">JPG/PNG</span>
+      <span style="background:rgba(52,211,153,0.12); color:#34D399; border:1px solid rgba(52,211,153,0.25); border-radius:8px; padding:.2rem .7rem; font-size:.72rem; font-weight:600">Kaggle</span>
+    </div>
+    <div style="font-family:'Sarabun',sans-serif; font-size:.78rem; color:#64748B; border-top:1px solid #2D3250; padding-top:.9rem">
+      <strong style="color:#94A3B8">ที่มา:</strong> Rashad, A. E. (2023). <em>Amazon Products Image</em>. Kaggle.<br>
+      <a href="https://www.kaggle.com/datasets/ahmedelsayedrashad/amazon-products-image"
+         target="_blank"
+         style="color:#9D6FFF; text-decoration:none; font-weight:600; word-break:break-all">
+        🔗 kaggle.com/datasets/ahmedelsayedrashad/amazon-products-image
+      </a>
+    </div>
+  </div>
+
+</div>
+""", unsafe_allow_html=True)
+
 st.markdown("</div>", unsafe_allow_html=True)
