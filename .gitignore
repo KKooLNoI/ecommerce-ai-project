@@ -1,12 +1,11 @@
-# Full dataset (375MB - too large for GitHub)
-data/amazon_products.csv
-data/images/
+# Full dataset (ใหญ่เกิน GitHub — ดาวน์โหลดจาก Kaggle)
+data/
+dataset/ML/amazon_products.csv
+dataset/CNN/images/
 
 # Virtual environment
 venv/
 __pycache__/
 *.pyc
 .tfcache/
-
-# TF cache
-data/.tfcache/
+dataset/.tfcache/
